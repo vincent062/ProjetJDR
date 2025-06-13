@@ -32,6 +32,9 @@ class Table
     #[ORM\Column(length: 255)]
     private ?string $type_de_table = null;
 
+    #[ORM\Column(nullable: true)]
+    private ?int $place_occupée = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -105,6 +108,18 @@ class Table
     public function setTypeDeTable(string $type_de_table): static
     {
         $this->type_de_table = $type_de_table;
+
+        return $this;
+    }
+
+    public function getPlaceOccupée(): ?int
+    {
+        return $this->place_occupée;
+    }
+
+    public function setPlaceOccupée(?int $place_occupée): static
+    {
+        $this->place_occupée = $place_occupée;
 
         return $this;
     }
