@@ -11,13 +11,13 @@ class AppFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         $table1 = new Table();
-        $table1->setMJ('lorem');
-        $table1->setLicence('mlk');
+        $table1->setMJ('Vincent');
+        $table1->setLicence('Les Terres d Arran');
         $table1->setPlaces('6');
-        $table1->setJoursJoués('25');
-        $table1->setHoraires('20h');
-        $table1->setTypeDeTable('lggk');
-        $table1->setPlaceOccupée('0');
+        $table1->setJoursJoués('2éme Samedi');
+        $table1->setHoraires('20h-00h');
+        $table1->setTypeDeTable('Héroic Fantasy');
+        $table1->setPlaceOccupée('5');
 
         $manager->persist($table1);
 
