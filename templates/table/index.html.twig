@@ -17,9 +17,11 @@
             <img src="{{ asset('images/Gemini_Generated_Image_cn67ficn67ficn67.jpg') }}" alt="Image de la table {{ table.licence }}">
             <div class="card-content">
                 <h2>{{ table.licence }}</h2>
+                <p><strong>Type :</strong> {{ table.typeDeTable }}</p>
                 <p><strong>Maître du Jeu :</strong> {{ table.MJ }}</p>
                 <p><strong>Joueurs :</strong> {{ table.placeOccupée|default(0) }} / {{ table.places }}</p>
                 <p><strong>Jours joués :</strong> {{ table.joursJoués }}</p>
+                <p><strong>Horaires :</strong> {{ table.horaires }}</p>
             </div>
         </div>
         {% else %}
