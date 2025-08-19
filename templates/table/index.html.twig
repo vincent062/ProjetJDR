@@ -1,7 +1,37 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello TableController!{% endblock %}
+{% block title %}Nos Tables de Jeu{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('styles/table.css') }}">
+{% endblock %}
 
 {% block body %}
+<div class="table-container">
+    <h1>Découvrez nos tables de jeu</h1>
 
+    <div class="table-grid">
+        {% for table in tables %}
+        <div class="table-card">
+            <img src="{{ asset('images/Gemini_Generated_Image_cn67ficn67ficn67.jpg') }}" alt="Image de la table {{ table.licence }}">
+            <div class="card-content">
+                <h2>{{ table.licence }}</h2>
+                <p><strong>Maître du Jeu :</strong> {{ table.MJ }}</p>
+                <p><strong>Joueurs :</strong> {{ table.placeOccupée|default(0) }} / {{ table.places }}</p>
+                <p><strong>Jours joués :</strong> {{ table.joursJoués }}</p>
+            </div>
+        </div>
+        {% else %}
+        <p>Aucune table n'est disponible pour le moment.</p>
+        {% endfor %}
+
+        <div class="table-card add-table-card">
+            <a href="{{ path('app_contact') }}">
+                <div class="plus-icon">+</div>
+                <h3>Proposer une nouvelle table</h3>
+            </a>
+        </div>
+    </div>
+</div>
 {% endblock %}

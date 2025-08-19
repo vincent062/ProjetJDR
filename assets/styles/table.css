@@ -1,0 +1,82 @@
+.table-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.table-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.table-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.table-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.table-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.4em;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.add-table-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px dashed #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    min-height: 380px;
+}
+
+.add-table-card a {
+    text-decoration: none;
+    color: #555;
+}
+
+.add-table-card:hover {
+    border-color: #1abc9c;
+    background-color: #f1f1f1;
+}
+
+.plus-icon {
+    font-size: 4em;
+    color: #1abc9c;
+    margin-bottom: 15px;
+}
