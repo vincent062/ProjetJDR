@@ -23,8 +23,8 @@ class ContactForm extends AbstractType
             ->add('email', TextType::class,[
                 'attr'=> ['class'=> '']
             ])
-            ->add('message' , texttype::class,[
-                'attr'=> ['class' => '']
+            ->add('message' , TextareaType::class,[
+                'attr'=> ['class' => '' , 'rows'=> 6]  
             ])
         ;
     }

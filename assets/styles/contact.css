@@ -1,8 +1,9 @@
 .contact-container {
     max-width: 600px;
     margin: 40px auto;
-    padding: 30px;
-    background-color: #f9f9f983;
+    padding: 40px;
+    background-color: #34495e;
+    color: #ecf0f1;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,11 +11,11 @@
 
 .contact-container h1 {
     text-align: center;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 30px;
 }
 
-.contact-container .form-group {
+/* .contact-container .form-group {
     margin-bottom: 20px;
 }
 
@@ -24,7 +25,35 @@
     border: 1px solid #ccccccb8;
     border-radius: 4px;
     font-size: 16px;
+} */
+
+/* Centrage des étiquettes des champs */
+.contact-container form > div > label {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
+
+/* Styles pour les champs de formulaire */
+.contact-container form input,
+.contact-container form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #7f8c8d;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #5d6d7e; /* Fond du champ plus sombre */
+    color: #ffffff; /* Texte du champ en blanc */
+    box-sizing: border-box;
+}
+
+/* Espacement entre les champs */
+.contact-container form > div {
+    margin-bottom: 20px;
+}
+
+
 
 .contact-container .btn {
     display: block;
@@ -51,7 +80,7 @@
 }
 
 .facebook-link h3 {
-    color: #555;
+    color: white;
     margin-bottom: 20px;
 }
 
