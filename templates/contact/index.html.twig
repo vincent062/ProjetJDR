@@ -4,25 +4,31 @@
 
 {% block stylesheets %}
     {{ parent() }}
+    {# Le CSS est déjà importé via app.js, mais on peut le garder pour la clarté #}
     <link rel="stylesheet" href="{{ asset('styles/contact.css') }}">
 {% endblock %}
 
 {% block body %}
 <div class="contact-container">
-    <h1>Contactez-nous</h1>
+    <div class="contact-header">
+        <h1>Une question, une idée, une table à proposer ?</h1>
+        <p>Utilisez le formulaire ci-dessous pour nous envoyer un message. Nous vous répondrons dès que possible !</p>
+    </div>
 
     {{ form_start(form) }}
-        {{ form_row(form.nom) }}
-        {{ form_row(form.prenom) }}
+        <div class="form-group">
+            {{ form_row(form.nom) }}
+            {{ form_row(form.prenom) }}
+        </div>
         {{ form_row(form.email) }}
         {{ form_row(form.message) }}
-        <button type="submit" class="btn">Envoyer</button>
+        <button type="submit" class="btn btn-primary">Envoyer le message</button>
     {{ form_end(form) }}
 
-    <div class="facebook-link">
-        <h3>Retrouvez-nous sur Facebook</h3>
-        <a href="https://www.facebook.com/VOTRE_PAGE" target="_blank" class="facebook-btn">
-            <i class="fab fa-facebook-f"></i> Suivez-nous !
+    <div class="social-link">
+        <h3>Retrouvez-nous aussi sur Facebook</h3>
+        <a href="https://www.facebook.com/Les Aventuriers Oniriques" target="_blank" class="facebook-btn">
+            <i class="fab fa-facebook-f"></i> Suivez notre actualité !
         </a>
     </div>
 </div>

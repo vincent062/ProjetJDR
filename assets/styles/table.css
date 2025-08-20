@@ -18,7 +18,7 @@
 }
 
 .table-card {
-    background-color: #ffffffcb;
+    background-color: #f5f5f500; ;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -55,28 +55,51 @@
 }
 
 .add-table-card {
-    display: flex;
+   display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 2px dashed #ccc;
-    background-color: #f9f9f9;
+    background-color: #f0f4f8; /* Un fond gris-bleu très léger */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     cursor: pointer;
-    min-height: 380px;
+    min-height: 380px; /* Conserve la même hauteur que les autres cartes */
 }
 
 .add-table-card a {
     text-decoration: none;
-    color: #555;
+    color: #34495e; /* Une couleur de texte plus sombre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
 }
 
 .add-table-card:hover {
-    border-color: #1abc9c;
-    background-color: #f1f1f1;
+    background-color: #e4eaf1;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .plus-icon {
     font-size: 4em;
     color: #1abc9c;
     margin-bottom: 15px;
+    line-height: 1; /* Assure que l'icône est bien centrée */
+    transition: transform 0.3s ease;
 }
+
+.add-table-card:hover .plus-icon {
+    transform: scale(1.1); /* Grossit l'icône au survol */
+}
+
+.add-table-card h3 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #2c3e50; /* Couleur du titre */
+} 

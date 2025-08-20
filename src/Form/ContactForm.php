@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Contacts;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -14,17 +15,30 @@ class ContactForm extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('nom' , TextType::class,[
-                'attr'=> ['class'=> '']
+            ->add('nom' , TextType::class, [
+                'label' => 'Votre nom',
+                'attr' => [
+                    'placeholder' => 'Dupont'
+                ]
             ])
-            ->add('prenom' , TextType::class,[
-                'attr' => ['class'=> '']
+            ->add('prenom' , TextType::class, [
+                'label' => 'Votre prénom',
+                'attr' => [
+                    'placeholder' => 'Jean'
+                ]
             ])
-            ->add('email', TextType::class,[
-                'attr'=> ['class'=> '']
+            ->add('email', EmailType::class, [ // Utiliser EmailType pour la validation
+                'label' => 'Votre adresse email',
+                'attr' => [
+                    'placeholder' => 'jean.dupont@exemple.com'
+                ]
             ])
-            ->add('message' , TextareaType::class,[
-                'attr'=> ['class' => '' , 'rows'=> 6]  
+            ->add('message' , TextareaType::class, [
+                'label' => 'Votre message',
+                'attr' => [
+                    'placeholder' => 'Bonjour, je souhaiterais proposer une nouvelle table de jeu...',
+                    'rows' => 8
+                ]  
             ])
         ;
     }

@@ -38,6 +38,10 @@ class Table
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $image = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $salle = null;
+
+
     public function getId(): ?int
     {
         return $this->id;
@@ -135,6 +139,18 @@ class Table
     public function setImage(?string $image): static
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    public function getSalle(): ?string
+    {
+        return $this->salle;
+    }
+
+    public function setSalle(?string $salle): static
+    {
+        $this->salle = $salle;
 
         return $this;
     }

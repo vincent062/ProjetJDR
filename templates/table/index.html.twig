@@ -22,7 +22,8 @@
                 <p><strong>Joueurs :</strong> {{ table.placeOccupée|default(0) }} / {{ table.places }}</p>
                 <p><strong>Jours joués :</strong> {{ table.joursJoués }}</p>
                 <p><strong>Horaires :</strong> {{ table.horaires }}</p>
-                <p><strong>Prochaine partie :</strong> {{ table.joursJoués }} à {{ table.horaires }}</p>
+                {# <p><strong>Prochaine partie :</strong> {{ table.joursJoués }} à {{ table.horaires }}</p> #}
+                <p><strong>Salle :</strong> {{ table.salle|default('Non définie') }}</p>
             </div>
         </div>
         {% else %}

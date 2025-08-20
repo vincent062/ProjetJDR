@@ -18,7 +18,8 @@ class AppFixtures extends Fixture
         $table1->setHoraires('20h-00h');
         $table1->setTypeDeTable('Horreur');
         $table1->setPlaceOccupée('2');
-        $table1->setImage('public/images/Gemini_Generated_Image_52gupu52gupu52gu.png'); // Image pour la table 1
+        $table1->setImage('Gemini_Generated_Image_52gupu52gupu52gu.png'); // Image pour la table 1
+        $table1->setSalle('Salle des associations');
 
         $manager->persist($table1);
 
@@ -31,7 +32,8 @@ class AppFixtures extends Fixture
         $table2->setHoraires('20h-00h');
         $table2->setTypeDeTable('Héroic Fantasy');
         $table2->setPlaceOccupée('5');
-        $table2->setImage('public\images\role n play.png');
+        $table2->setImage('Gemini_Generated_Image_2ed7jc2ed7jc2ed7.png');
+        $table2->setSalle('Salle des associations');
 
         $manager->persist($table2);
 
@@ -44,7 +46,8 @@ class AppFixtures extends Fixture
         $table3->setHoraires('20h-00h');
         $table3->setTypeDeTable('Héroic Fantasy');
         $table3->setPlaceOccupée('6');
-        $table3->setImage('public\images\COF 2.png');
+        $table3->setImage('Gemini_Generated_Image_da56kdda56kdda56.png');
+        $table3->setSalle('Salle des associations');
 
         $manager->persist($table3);
 
@@ -57,7 +60,8 @@ class AppFixtures extends Fixture
         $table4->setHoraires('20h-00h');
         $table4->setTypeDeTable('Fantastic / Magie');
         $table4->setPlaceOccupée('5');
-        $table4->setImage('public\images\harry potter.png');
+        $table4->setImage('harry potter.png');
+        $table4->setSalle('Salle des associations');
 
         $manager->persist($table4);
 
@@ -70,7 +74,8 @@ class AppFixtures extends Fixture
         $table5->setHoraires('20h-00h');
         $table5->setTypeDeTable('Apocalipse Zombie');
         $table5->setPlaceOccupée('7');
-        $table5->setImage('public\images\Z corps.png');
+        $table5->setImage('Z corps.png');
+        $table5->setSalle('Salle des associations');
 
         $manager->persist($table5);
 
@@ -83,7 +88,8 @@ class AppFixtures extends Fixture
         $table6->setHoraires('20h-00h');
         $table6->setTypeDeTable('Horreur Futuriste');
         $table6->setPlaceOccupée('5');
-        $table6->setImage('public\images\knight.png');
+        $table6->setImage('knight.png');
+        $table6->setSalle('Distanciel');
 
         $manager->persist($table6);
 
@@ -96,7 +102,8 @@ class AppFixtures extends Fixture
         $table7->setHoraires('20h-00h');
         $table7->setTypeDeTable('Héroic Fantasy');
         $table7->setPlaceOccupée('6');
-        $table7->setImage('public\images\heros et dragons.png');
+        $table7->setImage('Gemini_Generated_Image_18b51l18b51l18b5.png');
+        $table7->setSalle('Salle des associations');
 
         $manager->persist($table7);
 
@@ -109,7 +116,8 @@ class AppFixtures extends Fixture
         $table8->setHoraires('20h-00h');
         $table8->setTypeDeTable('Héroic Fantasy');
         $table8->setPlaceOccupée('5');
-        $table8->setImage('public/images/les terres d arran.png');
+        $table8->setImage('les terres d arran.png');
+        $table8->setSalle('Salle des associations');
 
         $manager->persist($table8);
 
