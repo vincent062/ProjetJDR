@@ -18,6 +18,7 @@ class AppFixtures extends Fixture
         $table1->setHoraires('20h-00h');
         $table1->setTypeDeTable('Horreur');
         $table1->setPlaceOccupée('2');
+        $table1->setImage('public\images\cthulhu.png'); // Image pour la table 1
 
         $manager->persist($table1);
 
@@ -30,6 +31,7 @@ class AppFixtures extends Fixture
         $table2->setHoraires('20h-00h');
         $table2->setTypeDeTable('Héroic Fantasy');
         $table2->setPlaceOccupée('5');
+        $table2->setImage('public\images\role n play.png');
 
         $manager->persist($table2);
 
@@ -42,6 +44,7 @@ class AppFixtures extends Fixture
         $table3->setHoraires('20h-00h');
         $table3->setTypeDeTable('Héroic Fantasy');
         $table3->setPlaceOccupée('6');
+        $table3->setImage('public\images\COF 2.png');
 
         $manager->persist($table3);
 
@@ -54,6 +57,7 @@ class AppFixtures extends Fixture
         $table4->setHoraires('20h-00h');
         $table4->setTypeDeTable('Fantastic / Magie');
         $table4->setPlaceOccupée('5');
+        $table4->setImage('public\images\harry potter.png');
 
         $manager->persist($table4);
 
@@ -66,6 +70,7 @@ class AppFixtures extends Fixture
         $table5->setHoraires('20h-00h');
         $table5->setTypeDeTable('Apocalipse Zombie');
         $table5->setPlaceOccupée('7');
+        $table5->setImage('public\images\Z corps.png');
 
         $manager->persist($table5);
 
@@ -78,6 +83,7 @@ class AppFixtures extends Fixture
         $table6->setHoraires('20h-00h');
         $table6->setTypeDeTable('Horreur Futuriste');
         $table6->setPlaceOccupée('5');
+        $table6->setImage('public\images\knight.png');
 
         $manager->persist($table6);
 
@@ -90,6 +96,7 @@ class AppFixtures extends Fixture
         $table7->setHoraires('20h-00h');
         $table7->setTypeDeTable('Héroic Fantasy');
         $table7->setPlaceOccupée('6');
+        $table7->setImage('public\images\heros et dragons.png');
 
         $manager->persist($table7);
 
@@ -102,6 +109,7 @@ class AppFixtures extends Fixture
         $table8->setHoraires('20h-00h');
         $table8->setTypeDeTable('Héroic Fantasy');
         $table8->setPlaceOccupée('5');
+        $table8->setImage('public/images/les terres d arran.png');
 
         $manager->persist($table8);
 

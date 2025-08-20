@@ -14,7 +14,7 @@
     <div class="table-grid">
         {% for table in tables %}
         <div class="table-card">
-            <img src="{{ asset('images/Gemini_Generated_Image_cn67ficn67ficn67.jpg') }}" alt="Image de la table {{ table.licence }}">
+            <img src="{{  asset('images/' ~ table.image) }}" alt="Image de la table {{ table.licence }}">
             <div class="card-content">
                 <h2>{{ table.licence }}</h2>
                 <p><strong>Type :</strong> {{ table.typeDeTable }}</p>
