@@ -18,7 +18,7 @@ class AppFixtures extends Fixture
         $table1->setHoraires('20h-00h');
         $table1->setTypeDeTable('Horreur');
         $table1->setPlaceOccupée('2');
-        $table1->setImage('public\images\cthulhu.png'); // Image pour la table 1
+        $table1->setImage('public/images/Gemini_Generated_Image_52gupu52gupu52gu.png'); // Image pour la table 1
 
         $manager->persist($table1);
 
